@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1.1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navigation {
+            background-color: rgb(129 38 38);
+            border-radius: 1px;
+            height: 2.5rem;
+        }
+
+        .navigation ul {
+            overflow: auto;
+        }
+
+        .navigation li {
+            float: left;
+            list-style: none;
+            margin: 14px 10px;
+        }
+
+        .navigation a {
+            padding: 3px 1px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #pic {
+            width: 100%;
+            height: 600px;
+            position: relative;
+            display: flex;
+            background-size: cover;
+            transition: 0.5s ease;
+        }
+
+
+        .heytext {
+            position: absolute;
+            top: 500px;
+            text-align: center;
+            background-color: rgb(48, 47, 47);
+            color: white;
+            width: 100%;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+
+        .cont :hover .mid {
+            opacity: 1;
+        }
+
+        .cont :hover #pic {
+            opacity: 0.3;
+        }
+
+        #myphoto {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgb(21, 16, 16);
+            border-radius: 70px;
+        }
+
+        .textweb {
+            color: #26b6e2;
+            position: relative;
+        }
+
+        .textdone {
+            color: #26b6e2;
+            position: relative;
+            left: 460px;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #car {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 460px;
+            border: 2px solid black;
+            border-radius: 9px;
+        }
+
+        .projdes {
+            color: #26b6e2;
+            position: relative;
+            left: 680px;
+            bottom: 200px;
+        }
+
+        .des {
+            color: rgb(33, 113, 81);
+            position: relative;
+            left: 680px;
+            bottom: 200px;
+        }
+
+        .house {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 460px;
+            border: 2px solid black;
+            border-radius: 9px;
+        }
+
+        #bar {
+            height: 5px;
+            width: 400px;
+        }
+
+        .nirmit {
+            display: flex;
+            align-items: center;
+
+            flex-direction: column;
+        }
+
+        .photos {
+            color: #26b6e2;
+            position: relative;
+            left: 500px;
+            font-size: x-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .box {
+            height: 200px;
+            width: 100%;
+            border: 2px solid rgb(128, 122, 122);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 200px;
+            height: 150px;
+            border: 2px solid rgb(15, 15, 15);
+            border-radius: 5px;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .middle {
+            transition: 0.5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 80%;
+            left: 18%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul>
+            <li><a href="*">About</a></li>
+            <li><a href="*">Work</a></li>
+            <li><a href="*">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="cont">
+        <div class="mid">
+            <div class="heytext">Hey, I'm Nirmit</div>
+            <img id="pic" src="deakin.jpg" alt="Error in loading image">
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+
+
+    <br>
+    <br>
+    <div class="nirmit">
+        <img id="myphoto" src="PHOTO.jpeg" alt="Error in loading image">
+        <p class="textweb">I am a full stack web developer based in Melbourne, Australia.</p>
+        <hr id="bar">
+    </div>
+    <br>
+
+    <br>
+    <div class="textdone">Here's what I've done so far
+    </div>
+    <br>
+    <img id="car" src="carn.jpg" alt="No image found">
+    <br>
+    <br>
+
+    <div>
+        <h3 class="projdes">Project Description</h3>
+    </div>
+
+    <div>
+        <span class="des"> The mirror cleaning robot is an autonomous device designed to climb and clean mirrors using
+            brushless <br> motors, a propeller, and N20 gear motors. Controlled by an Arduino UNO and Bluetooth module,
+            it <br> effectively removes stains and debris from vertical surfaces, providing an efficient and convenient
+            <br> cleaning solution. </span>
+    </div>
+
+    <div>
+        <img class="house" src="house.png" alt="Error in founding the image">
+    </div>
+
+    <div>
+        <h3 class="projdes">Project Description</h3>
+    </div>
+
+    <div>
+        <span class="des"> The project aims to create a solar energy charger using Arduino, incorporating a solar
+            tracker to <br> maximize sunlight exposure. It harnesses solar energy, charges batteries, and prevents
+            overcharging <br> through an Arduino microcontroller. The system's efficiency and reliability are enhanced
+            by <br> continuously adjusting the solar panel's angle for optimal sun tracking. </span>
+    </div>
+
+    <div>
+        <hr>
+    </div>
+    <br>
+    <div>
+        <h3 class="photos">My Photos</h3>
+    </div>
+    <br>
+    </div>
+    <div class="box">
+        <img src="1.jpeg" alt="No image found" class="item">
+        <img src="2.jpg" alt="No image found" class="item">
+        <img src="3.jpeg" alt="No image found" class="item">
+        <img src="4.jpeg" alt="No image found" class="item">
+    </div>
+</body>
+
+</html>
